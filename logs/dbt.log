@@ -1,0 +1,27 @@
+
+
+============================== 2023-06-06 14:48:57.471809 | c72628a5-89c8-4142-8776-d6f7e93f06b3 ==============================
+[0m14:48:57.471809 [info ] [MainThread]: Running with dbt=1.4.5
+[0m14:48:57.473840 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\AvenashRamesh\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m14:48:57.474806 [debug] [MainThread]: Tracking: tracking
+[0m14:48:57.491950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120E6735D80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120E6734580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120E6735C60>]}
+[0m14:49:04.373546 [debug] [MainThread]: Starter project path: C:\Users\AvenashRamesh\igm\lib\site-packages\dbt\include\starter_project
+[0m14:49:57.506566 [info ] [MainThread]: Profile fivetran_poc written to C:\Users\AvenashRamesh\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:49:57.507539 [info ] [MainThread]: 
+Your new dbt project "fivetran_poc" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:49:57.508607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120E6736E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120E792FA60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120E792D7B0>]}
+[0m14:49:57.509531 [debug] [MainThread]: Flushing usage events
