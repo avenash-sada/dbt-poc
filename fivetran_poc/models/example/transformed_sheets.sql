@@ -1,7 +1,7 @@
 {{
     config(
         materialized='incremental',
-        unique_key='string'
+        unique_key='upper_string'
     )
 }}
 
@@ -15,6 +15,6 @@ from source_data
 {% if is_incremental() %}
 
   -- this filter will only be applied on an incremental run
-  where PARSE_TIMESTAMP("%m/%d/%Y %H:%M:%S", timestamp) > (select max(PARSE_TIMESTAMP("%m/%d/%Y %H:%M:%S", timestamp)) from {{ this }})
+  where PARSE_TIMESTAMP("%m/%d/%Y %H:%M:%S", time_stamp) > (select max(PARSE_TIMESTAMP("%m/%d/%Y %H:%M:%S", time_stamp)) from {{ this }})
 
 {% endif %}
