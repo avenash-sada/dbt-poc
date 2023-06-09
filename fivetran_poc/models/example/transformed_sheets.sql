@@ -6,7 +6,7 @@
 }}
 
 with source_data as (
-    select string, timestamp from {{source('poc','poc_sheets')}}`sadaindia-tvm-poc-de`.google_sheets.poc_sheets
+    select string, timestamp from {{source('poc','poc_sheets')}}
 )
 
 select UPPER(string) as upper_string, timestamp as time_stamp
