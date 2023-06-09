@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: poc
-    database: google_sheets
+    database: sadaindia-tvm-poc-de
+    schema: google_sheets
     tables:
       - name: poc_sheets
