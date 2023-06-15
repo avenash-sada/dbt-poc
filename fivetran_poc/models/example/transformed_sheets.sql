@@ -9,7 +9,7 @@ with source_data as (
     select first_name, last_name, job_title, email, salary, _fivetran_synced from {{source('poc','poc_sheets')}}
 )
 
-select Concat(first_name, " ", last_name) as full_name, job_title, salary, _fivetran_synced
+select Concat(first_name, " ", last_name) as full_name, job_title, email, salary, _fivetran_synced
 from source_data
 
 {% if is_incremental() %}
